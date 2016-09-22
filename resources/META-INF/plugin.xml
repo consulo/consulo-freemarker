@@ -3,7 +3,7 @@
 	<name>Freemarker suport</name>
 	<description>Freemarker template language support</description>
 	<version>0.1</version>
-	<vendor>Max Ishchenko &amp; Consulo</vendor>
+	<vendor>Max Ishchenko &amp; consulo.io</vendor>
 	<depends>com.intellij.xml</depends>
 
 	<extensions defaultExtensionNs="com.intellij">

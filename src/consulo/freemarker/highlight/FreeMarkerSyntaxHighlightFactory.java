@@ -1,4 +1,4 @@
-package org.consulo.freemarker.highlight;
+package consulo.freemarker.highlight;
 
 import org.jetbrains.annotations.NotNull;
 import com.intellij.openapi.fileTypes.SingleLazyInstanceSyntaxHighlighterFactory;

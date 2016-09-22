@@ -1,4 +1,4 @@
-package org.consulo.freemarker;
+package consulo.freemarker;
 
 import org.jetbrains.annotations.NotNull;
 import com.intellij.openapi.fileTypes.FileTypeConsumer;

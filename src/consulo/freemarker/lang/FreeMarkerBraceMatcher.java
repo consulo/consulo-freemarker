@@ -1,6 +1,6 @@
-package org.consulo.freemarker.lang;
+package consulo.freemarker.lang;
 
-import org.consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
+import consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import com.intellij.lang.BracePair;

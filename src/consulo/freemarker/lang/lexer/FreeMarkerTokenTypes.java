@@ -1,7 +1,7 @@
-package org.consulo.freemarker.lang.lexer;
+package consulo.freemarker.lang.lexer;
 
-import org.consulo.freemarker.lang.psi.FreeMarkerElementType;
-import org.consulo.freemarker.lang.psi.FreeMarkerElementTypes;
+import consulo.freemarker.lang.psi.FreeMarkerElementType;
+import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
 
 import com.intellij.psi.TokenType;
 import com.intellij.psi.tree.IElementType;

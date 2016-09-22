@@ -1,4 +1,4 @@
-package org.consulo.freemarker.lang;
+package consulo.freemarker.lang;
 
 import com.intellij.lang.Language;
 import com.intellij.psi.templateLanguages.TemplateLanguage;

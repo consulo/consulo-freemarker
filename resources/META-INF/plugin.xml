@@ -1,20 +1,20 @@
 <idea-plugin>
-	<id>org.consulo.freemarker</id>
+	<id>consulo.freemarker</id>
 	<name>Freemarker suport</name>
 	<description>Freemarker template language support</description>
-	<version>0.1</version>
+	<version>SNAPSHOT</version>
 	<vendor>Max Ishchenko &amp; consulo.io</vendor>
 	<depends>com.intellij.xml</depends>
 
 	<extensions defaultExtensionNs="com.intellij">
-		<lang.parserDefinition language="FREE-MARKER" implementationClass="org.consulo.freemarker.lang.FreeMarkerParserDefinition" />
-		<lang.commenter language="FREE-MARKER" implementationClass="org.consulo.freemarker.lang.FreeMarkerCommenter" />
-		<lang.braceMatcher language="FREE-MARKER" implementationClass="org.consulo.freemarker.lang.FreeMarkerBraceMatcher" />
-		<lang.syntaxHighlighterFactory key="FREE-MARKER" implementationClass="org.consulo.freemarker.highlight.FreeMarkerSyntaxHighlightFactory" />
-		<syntaxHighlighter key="FREE-MARKER" implementationClass="org.consulo.freemarker.highlight.FreeMarkerHighlighter"/>
+		<lang.parserDefinition language="FREE-MARKER" implementationClass="consulo.freemarker.lang.FreeMarkerParserDefinition" />
+		<lang.commenter language="FREE-MARKER" implementationClass="consulo.freemarker.lang.FreeMarkerCommenter" />
+		<lang.braceMatcher language="FREE-MARKER" implementationClass="consulo.freemarker.lang.FreeMarkerBraceMatcher" />
+		<lang.syntaxHighlighterFactory key="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerSyntaxHighlightFactory" />
+		<syntaxHighlighter key="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerHighlighter"/>
 
-		<fileTypeFactory implementation="org.consulo.freemarker.FreeMarkerFileTypeFactory" />
-		<fileType.fileViewProviderFactory filetype="FREE-MARKER" implementationClass="org.consulo.freemarker.FreeMarkerFileViewProviderFactory" />
+		<fileTypeFactory implementation="consulo.freemarker.FreeMarkerFileTypeFactory" />
+		<fileType.fileViewProviderFactory filetype="FREE-MARKER" implementationClass="consulo.freemarker.FreeMarkerFileViewProviderFactory" />
 	</extensions>
 </idea-plugin>
 

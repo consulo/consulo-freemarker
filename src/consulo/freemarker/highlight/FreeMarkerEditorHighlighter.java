@@ -1,6 +1,6 @@
-package org.consulo.freemarker.highlight;
+package consulo.freemarker.highlight;
 
-import org.consulo.freemarker.lang.psi.FreeMarkerElementTypes;
+import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import com.intellij.ide.highlighter.HtmlFileType;

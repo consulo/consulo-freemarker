@@ -1,4 +1,4 @@
-package org.consulo.freemarker.lang;
+package consulo.freemarker.lang;
 
 import org.jetbrains.annotations.Nullable;
 import com.intellij.lang.Commenter;

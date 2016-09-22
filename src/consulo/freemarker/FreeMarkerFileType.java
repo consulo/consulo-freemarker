@@ -1,9 +1,7 @@
-package org.consulo.freemarker;
+package consulo.freemarker;
 
 import javax.swing.Icon;
 
-import org.consulo.freemarker.highlight.FreeMarkerEditorHighlighter;
-import org.consulo.freemarker.lang.FreeMarkerLanguage;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -15,6 +13,8 @@ import com.intellij.openapi.fileTypes.FileTypeEditorHighlighterProviders;
 import com.intellij.openapi.fileTypes.LanguageFileType;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
+import consulo.freemarker.highlight.FreeMarkerEditorHighlighter;
+import consulo.freemarker.lang.FreeMarkerLanguage;
 
 /**
  * User: Max

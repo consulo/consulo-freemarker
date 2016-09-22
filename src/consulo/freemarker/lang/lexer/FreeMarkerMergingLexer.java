@@ -1,4 +1,4 @@
-package org.consulo.freemarker.lang.lexer;
+package consulo.freemarker.lang.lexer;
 
 import com.intellij.lexer.FlexAdapter;
 import com.intellij.lexer.MergingLexerAdapter;

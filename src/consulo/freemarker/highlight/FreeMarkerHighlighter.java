@@ -1,14 +1,14 @@
-package org.consulo.freemarker.highlight;
+package consulo.freemarker.highlight;
 
 import java.util.HashMap;
 
-import org.consulo.freemarker.lang.lexer.FreeMarkerHighlighterKeys;
-import org.consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
 import org.jetbrains.annotations.NotNull;
 import com.intellij.lexer.Lexer;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import com.intellij.openapi.fileTypes.SyntaxHighlighterBase;
 import com.intellij.psi.tree.IElementType;
+import consulo.freemarker.lang.lexer.FreeMarkerHighlighterKeys;
+import consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
 
 /**
  * User: Max

@@ -1,4 +1,4 @@
-package org.consulo.freemarker.lang.lexer;
+package consulo.freemarker.lang.lexer;
 
 import com.intellij.openapi.editor.DefaultLanguageHighlighterColors;
 import com.intellij.openapi.editor.HighlighterColors;

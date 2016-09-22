@@ -1,9 +1,9 @@
-package org.consulo.freemarker.lang;
+package consulo.freemarker.lang;
 
-import org.consulo.freemarker.lang.lexer.FreeMarkerMergingLexer;
-import org.consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
-import org.consulo.freemarker.lang.psi.FreeMarkerElementTypes;
-import org.consulo.freemarker.lang.psi.FreeMarkerFile;
+import consulo.freemarker.lang.lexer.FreeMarkerMergingLexer;
+import consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
+import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
+import consulo.freemarker.lang.psi.FreeMarkerFile;
 import org.jetbrains.annotations.NotNull;
 import com.intellij.extapi.psi.ASTWrapperPsiElement;
 import com.intellij.lang.ASTNode;

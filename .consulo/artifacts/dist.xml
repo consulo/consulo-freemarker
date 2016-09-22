@@ -2,7 +2,7 @@
   <artifact build-on-make="true" name="dist">
     <output-path>$PROJECT_DIR$/out/artifacts/dist</output-path>
     <root id="root">
-      <element id="directory" name="freemarker">
+      <element id="directory" name="consulo.freemarker">
         <element id="directory" name="lib">
           <element id="zip-archive" name="freemarker.jar">
             <element id="module-output" name="consulo-freemarker" />

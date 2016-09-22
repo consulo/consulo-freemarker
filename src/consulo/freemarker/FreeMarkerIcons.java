@@ -1,4 +1,4 @@
-package org.consulo.freemarker;
+package consulo.freemarker;
 
 import javax.swing.Icon;
 

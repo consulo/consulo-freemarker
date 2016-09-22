@@ -1,12 +1,12 @@
-package org.consulo.freemarker;
+package consulo.freemarker;
 
 import gnu.trove.THashSet;
 
 import java.util.Arrays;
 import java.util.Set;
 
-import org.consulo.freemarker.lang.FreeMarkerLanguage;
-import org.consulo.freemarker.lang.psi.FreeMarkerElementTypes;
+import consulo.freemarker.lang.FreeMarkerLanguage;
+import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import com.intellij.lang.Language;

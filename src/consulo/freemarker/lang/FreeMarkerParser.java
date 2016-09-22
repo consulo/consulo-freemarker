@@ -1,6 +1,6 @@
-package org.consulo.freemarker.lang;
+package consulo.freemarker.lang;
 
-import org.consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
+import consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
 import org.jetbrains.annotations.NotNull;
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.PsiBuilder;

@@ -1,6 +1,6 @@
-package org.consulo.freemarker.highlight;
+package consulo.freemarker.highlight;
 
-import org.consulo.freemarker.lang.lexer.FreeMarkerMergingLexer;
+import consulo.freemarker.lang.lexer.FreeMarkerMergingLexer;
 import com.intellij.lexer.LayeredLexer;
 
 /**

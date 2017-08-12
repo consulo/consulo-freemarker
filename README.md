@@ -1,0 +1,1 @@
+[![Build Status](https://ci.consulo.io/job/consulo-freemarker/badge/icon)](https://ci.consulo.io/job/consulo-freemarker/)

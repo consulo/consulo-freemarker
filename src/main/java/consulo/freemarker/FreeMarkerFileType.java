@@ -1,7 +1,5 @@
 package consulo.freemarker;
 
-import javax.swing.Icon;
-
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -15,6 +13,7 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
 import consulo.freemarker.highlight.FreeMarkerEditorHighlighter;
 import consulo.freemarker.lang.FreeMarkerLanguage;
+import consulo.ui.image.Image;
 
 /**
  * User: Max
@@ -60,7 +59,7 @@ public class FreeMarkerFileType extends LanguageFileType
 	}
 
 	@Nullable
-	public Icon getIcon()
+	public Image getIcon()
 	{
 		return FreeMarkerIcons.FreeMarker;
 	}

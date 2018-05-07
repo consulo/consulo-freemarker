@@ -1,8 +1,7 @@
 package consulo.freemarker;
 
-import javax.swing.Icon;
-
 import com.intellij.openapi.util.IconLoader;
+import consulo.ui.image.Image;
 
 /**
  * @author VISTALL
@@ -10,5 +9,5 @@ import com.intellij.openapi.util.IconLoader;
  */
 public interface FreeMarkerIcons
 {
-	Icon FreeMarker = IconLoader.findIcon("/icons/freemarker.png");
+	Image FreeMarker = IconLoader.findIcon("/icons/freemarker.png");
 }

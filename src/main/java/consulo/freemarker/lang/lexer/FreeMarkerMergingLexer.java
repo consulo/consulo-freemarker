@@ -1,6 +1,5 @@
 package consulo.freemarker.lang.lexer;
 
-import com.intellij.lexer.FlexAdapter;
 import com.intellij.lexer.MergingLexerAdapter;
 import com.intellij.psi.tree.TokenSet;
 
@@ -16,6 +15,6 @@ public class FreeMarkerMergingLexer extends MergingLexerAdapter
 
 	public FreeMarkerMergingLexer()
 	{
-		super(new FlexAdapter(new _FreeMarkerLexer()), mergeMe);
+		super(new _FreeMarkerLexer(), mergeMe);
 	}
 }

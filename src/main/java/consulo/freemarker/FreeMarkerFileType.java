@@ -40,7 +40,7 @@ public class FreeMarkerFileType extends LanguageFileType
 
 	@NotNull
 	@NonNls
-	public String getName()
+	public String getId()
 	{
 		return "FREE-MARKER";
 	}

@@ -1,8 +1,7 @@
-package consulo.freemarker.lang.lexer.;
+package consulo.freemarker.lang.lexer;
 
-import com.intellij.lexer.FlexLexer;
+import com.intellij.lexer.LexerBase;
 import com.intellij.psi.tree.IElementType;
-import com.intellij.psi.TokenType;
 
 %%
 
@@ -11,18 +10,13 @@ import com.intellij.psi.TokenType;
    int bracketNesting = 0;
 
    int hashLiteralNesting = 0;
-
-   public _FreeMarkerLexer() {
-     this((java.io.Reader)null);
-   }
-
 %}
 
 %public
 %class _FreeMarkerLexer
-%implements FlexLexer
+%extends LexerBase
 %unicode
-%function advance
+%function advanceImpl
 %type IElementType
 %eof{  return;
 %eof}

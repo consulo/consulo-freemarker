@@ -1,20 +1,10 @@
 package consulo.freemarker;
 
 import javax.annotation.Nonnull;
-
-import org.jetbrains.annotations.NonNls;
-
 import javax.annotation.Nullable;
 
-import com.intellij.openapi.editor.colors.EditorColorsScheme;
-import com.intellij.openapi.editor.highlighter.EditorHighlighter;
-import com.intellij.openapi.fileTypes.EditorHighlighterProvider;
-import com.intellij.openapi.fileTypes.FileType;
-import com.intellij.openapi.fileTypes.FileTypeEditorHighlighterProviders;
+import org.jetbrains.annotations.NonNls;
 import com.intellij.openapi.fileTypes.LanguageFileType;
-import com.intellij.openapi.project.Project;
-import com.intellij.openapi.vfs.VirtualFile;
-import consulo.freemarker.highlight.FreeMarkerEditorHighlighter;
 import consulo.freemarker.lang.FreeMarkerLanguage;
 import consulo.ui.image.Image;
 

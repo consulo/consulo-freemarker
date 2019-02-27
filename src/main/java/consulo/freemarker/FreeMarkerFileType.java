@@ -30,15 +30,6 @@ public class FreeMarkerFileType extends LanguageFileType
 	protected FreeMarkerFileType()
 	{
 		super(FreeMarkerLanguage.INSTANCE);
-
-		FileTypeEditorHighlighterProviders.INSTANCE.addExplicitExtension(this, new EditorHighlighterProvider()
-		{
-			@Override
-			public EditorHighlighter getEditorHighlighter(@Nullable Project project, @Nonnull FileType fileType, @Nullable VirtualFile virtualFile, @Nonnull EditorColorsScheme colors)
-			{
-				return new FreeMarkerEditorHighlighter(project, virtualFile, colors);
-			}
-		});
 	}
 
 	@Nonnull

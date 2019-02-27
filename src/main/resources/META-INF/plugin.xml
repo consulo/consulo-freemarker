@@ -15,6 +15,7 @@
 
 		<fileTypeFactory implementation="consulo.freemarker.FreeMarkerFileTypeFactory" />
 		<fileType.fileViewProviderFactory filetype="FREE-MARKER" implementationClass="consulo.freemarker.FreeMarkerFileViewProviderFactory" />
+		<editorHighlighterProvider filetype="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerEditorHighlighterProvider" />
 	</extensions>
 </idea-plugin>
 

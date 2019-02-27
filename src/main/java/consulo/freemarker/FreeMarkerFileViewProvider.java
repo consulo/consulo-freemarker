@@ -5,10 +5,13 @@ import gnu.trove.THashSet;
 import java.util.Arrays;
 import java.util.Set;
 
+import javax.annotation.Nonnull;
+
 import consulo.freemarker.lang.FreeMarkerLanguage;
 import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+
+import javax.annotation.Nullable;
+
 import com.intellij.lang.Language;
 import com.intellij.lang.LanguageParserDefinitions;
 import com.intellij.lang.html.HTMLLanguage;
@@ -30,14 +33,14 @@ public class FreeMarkerFileViewProvider extends MultiplePsiFilesPerDocumentFileV
 		super(manager, virtualFile, physical);
 	}
 
-	@NotNull
+	@Nonnull
 	@Override
 	public Language getBaseLanguage()
 	{
 		return FreeMarkerLanguage.INSTANCE;
 	}
 
-	@NotNull
+	@Nonnull
 	@Override
 	public Language getTemplateDataLanguage()
 	{
@@ -46,7 +49,7 @@ public class FreeMarkerFileViewProvider extends MultiplePsiFilesPerDocumentFileV
 
 	@Nullable
 	@Override
-	protected PsiFile createFile(@NotNull Language lang)
+	protected PsiFile createFile(@Nonnull Language lang)
 	{
 		if(lang == getBaseLanguage())
 		{
@@ -66,7 +69,7 @@ public class FreeMarkerFileViewProvider extends MultiplePsiFilesPerDocumentFileV
 		return LanguageParserDefinitions.INSTANCE.forLanguage(lang).createFile(this);
 	}
 
-	@NotNull
+	@Nonnull
 	public Set<Language> getLanguages()
 	{
 		return new THashSet<Language>(Arrays.asList(getBaseLanguage(), getTemplateDataLanguage()));

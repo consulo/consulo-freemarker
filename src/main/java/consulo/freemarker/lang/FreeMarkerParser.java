@@ -1,7 +1,8 @@
 package consulo.freemarker.lang;
 
+import javax.annotation.Nonnull;
+
 import consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
-import org.jetbrains.annotations.NotNull;
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.PsiBuilder;
 import com.intellij.lang.PsiParser;
@@ -17,7 +18,7 @@ import consulo.lang.LanguageVersion;
 public class FreeMarkerParser implements PsiParser
 {
 
-	@NotNull
+	@Nonnull
 	public ASTNode parse(IElementType root, PsiBuilder builder, LanguageVersion languageVersion)
 	{
 		builder.setDebugMode(true);

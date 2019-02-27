@@ -1,10 +1,11 @@
 package consulo.freemarker.lang;
 
+import javax.annotation.Nonnull;
+
 import consulo.freemarker.lang.lexer.FreeMarkerMergingLexer;
 import consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
 import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
 import consulo.freemarker.lang.psi.FreeMarkerFile;
-import org.jetbrains.annotations.NotNull;
 import com.intellij.extapi.psi.ASTWrapperPsiElement;
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.ParserDefinition;
@@ -25,44 +26,44 @@ import consulo.lang.LanguageVersion;
  */
 public class FreeMarkerParserDefinition implements ParserDefinition
 {
-	@NotNull
-	public Lexer createLexer(@NotNull LanguageVersion languageVersion)
+	@Nonnull
+	public Lexer createLexer(@Nonnull LanguageVersion languageVersion)
 	{
 		return new FreeMarkerMergingLexer();
 	}
 
-	@NotNull
-	public PsiParser createParser(@NotNull LanguageVersion languageVersion)
+	@Nonnull
+	public PsiParser createParser(@Nonnull LanguageVersion languageVersion)
 	{
 		return new FreeMarkerParser();
 	}
 
-	@NotNull
+	@Nonnull
 	public IFileElementType getFileNodeType()
 	{
 		return FreeMarkerElementTypes.FILE;
 	}
 
-	@NotNull
-	public TokenSet getWhitespaceTokens(@NotNull LanguageVersion languageVersion)
+	@Nonnull
+	public TokenSet getWhitespaceTokens(@Nonnull LanguageVersion languageVersion)
 	{
 		return FreeMarkerTokenTypes.WHITESPACE_SET;
 	}
 
-	@NotNull
-	public TokenSet getCommentTokens(@NotNull LanguageVersion languageVersion)
+	@Nonnull
+	public TokenSet getCommentTokens(@Nonnull LanguageVersion languageVersion)
 	{
 		return FreeMarkerTokenTypes.COMMENTS_SET;
 	}
 
-	@NotNull
+	@Nonnull
 	@Override
-	public TokenSet getStringLiteralElements(@NotNull LanguageVersion languageVersion)
+	public TokenSet getStringLiteralElements(@Nonnull LanguageVersion languageVersion)
 	{
 		return FreeMarkerTokenTypes.STRING_SET;
 	}
 
-	@NotNull
+	@Nonnull
 	public PsiElement createElement(ASTNode node)
 	{
 		return new ASTWrapperPsiElement(node);

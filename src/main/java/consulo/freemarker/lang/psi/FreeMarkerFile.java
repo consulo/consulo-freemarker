@@ -1,8 +1,9 @@
 package consulo.freemarker.lang.psi;
 
+import javax.annotation.Nonnull;
+
 import consulo.freemarker.FreeMarkerFileType;
 import consulo.freemarker.lang.FreeMarkerLanguage;
-import org.jetbrains.annotations.NotNull;
 import com.intellij.extapi.psi.PsiFileBase;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.psi.FileViewProvider;
@@ -13,12 +14,12 @@ import com.intellij.psi.FileViewProvider;
  */
 public class FreeMarkerFile extends PsiFileBase
 {
-	public FreeMarkerFile(@NotNull FileViewProvider viewProvider)
+	public FreeMarkerFile(@Nonnull FileViewProvider viewProvider)
 	{
 		super(viewProvider, FreeMarkerLanguage.INSTANCE);
 	}
 
-	@NotNull
+	@Nonnull
 	@Override
 	public FileType getFileType()
 	{

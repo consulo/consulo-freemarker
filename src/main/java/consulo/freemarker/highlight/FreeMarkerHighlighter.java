@@ -2,7 +2,8 @@ package consulo.freemarker.highlight;
 
 import java.util.HashMap;
 
-import org.jetbrains.annotations.NotNull;
+import javax.annotation.Nonnull;
+
 import com.intellij.lexer.Lexer;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import com.intellij.openapi.fileTypes.SyntaxHighlighterBase;
@@ -30,13 +31,13 @@ public class FreeMarkerHighlighter extends SyntaxHighlighterBase
 		safeMap(keys, FreeMarkerTokenTypes.IDENTIFIER_SET, FreeMarkerHighlighterKeys.ID);
 	}
 
-	@NotNull
+	@Nonnull
 	public Lexer getHighlightingLexer()
 	{
 		return new FreeMarkerHighlightingLexer();
 	}
 
-	@NotNull
+	@Nonnull
 	public TextAttributesKey[] getTokenHighlights(IElementType tokenType)
 	{
 		return new TextAttributesKey[]{keys.get(tokenType)};

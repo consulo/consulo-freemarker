@@ -1,8 +1,11 @@
 package consulo.freemarker.lang;
 
+import javax.annotation.Nonnull;
+
 import consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+
+import javax.annotation.Nullable;
+
 import com.intellij.lang.BracePair;
 import com.intellij.lang.PairedBraceMatcher;
 import com.intellij.psi.PsiFile;
@@ -22,7 +25,7 @@ public class FreeMarkerBraceMatcher implements PairedBraceMatcher
 			new BracePair(FreeMarkerTokenTypes.OPEN_BRACE, FreeMarkerTokenTypes.CLOSE_BRACE, false)
 	};
 
-	public boolean isPairedBracesAllowedBeforeType(@NotNull IElementType lbraceType, @Nullable IElementType contextType)
+	public boolean isPairedBracesAllowedBeforeType(@Nonnull IElementType lbraceType, @Nullable IElementType contextType)
 	{
 		return true;
 	}

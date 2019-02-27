@@ -1,8 +1,10 @@
 package consulo.freemarker.highlight;
 
+import javax.annotation.Nonnull;
+
 import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+
+import javax.annotation.Nullable;
 import com.intellij.ide.highlighter.HtmlFileType;
 import com.intellij.lexer.Lexer;
 import com.intellij.openapi.editor.colors.EditorColorsScheme;
@@ -20,7 +22,7 @@ import com.intellij.psi.tree.IElementType;
 public class FreeMarkerEditorHighlighter extends LayeredLexerEditorHighlighter
 {
 
-	public FreeMarkerEditorHighlighter(@Nullable final com.intellij.openapi.project.Project project, @Nullable final com.intellij.openapi.vfs.VirtualFile virtualFile, @NotNull final EditorColorsScheme colors)
+	public FreeMarkerEditorHighlighter(@Nullable final com.intellij.openapi.project.Project project, @Nullable final com.intellij.openapi.vfs.VirtualFile virtualFile, @Nonnull final EditorColorsScheme colors)
 	{
 		super(new FreeMarkerHighlighter(), colors);
 		final SyntaxHighlighter highlighter = SyntaxHighlighterFactory.getSyntaxHighlighter(HtmlFileType.INSTANCE, project, virtualFile);
@@ -29,13 +31,13 @@ public class FreeMarkerEditorHighlighter extends LayeredLexerEditorHighlighter
 
 		registerLayer(FreeMarkerElementTypes.TEMPLATE_TEXT, new LayerDescriptor(new SyntaxHighlighter()
 		{
-			@NotNull
+			@Nonnull
 			public Lexer getHighlightingLexer()
 			{
 				return highlighter.getHighlightingLexer();
 			}
 
-			@NotNull
+			@Nonnull
 			public TextAttributesKey[] getTokenHighlights(final IElementType tokenType)
 			{
 				return highlighter.getTokenHighlights(tokenType);

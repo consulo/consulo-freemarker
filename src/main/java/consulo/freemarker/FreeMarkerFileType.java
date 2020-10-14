@@ -1,12 +1,13 @@
 package consulo.freemarker;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
-import org.jetbrains.annotations.NonNls;
 import com.intellij.openapi.fileTypes.LanguageFileType;
+import consulo.freemarker.icon.FreeMarkerIconGroup;
 import consulo.freemarker.lang.FreeMarkerLanguage;
 import consulo.ui.image.Image;
+import org.jetbrains.annotations.NonNls;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 /**
  * User: Max
@@ -45,7 +46,7 @@ public class FreeMarkerFileType extends LanguageFileType
 	@Nullable
 	public Image getIcon()
 	{
-		return FreeMarkerIcons.FreeMarker;
+		return FreeMarkerIconGroup.freemarker();
 	}
 }
 

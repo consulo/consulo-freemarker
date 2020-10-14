@@ -1,4 +1,4 @@
-<idea-plugin>
+<consulo-plugin>
 	<id>consulo.freemarker</id>
 	<name>Freemarker suport</name>
 	<description>Freemarker template language support</description>
@@ -17,6 +17,6 @@
 		<fileType.fileViewProviderFactory filetype="FREE-MARKER" implementationClass="consulo.freemarker.FreeMarkerFileViewProviderFactory" />
 		<editorHighlighterProvider filetype="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerEditorHighlighterProvider" />
 	</extensions>
-</idea-plugin>
+</consulo-plugin>
 
         

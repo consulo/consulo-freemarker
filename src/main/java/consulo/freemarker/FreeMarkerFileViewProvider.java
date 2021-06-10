@@ -1,17 +1,5 @@
 package consulo.freemarker;
 
-import gnu.trove.THashSet;
-
-import java.util.Arrays;
-import java.util.Set;
-
-import javax.annotation.Nonnull;
-
-import consulo.freemarker.lang.FreeMarkerLanguage;
-import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
-
-import javax.annotation.Nullable;
-
 import com.intellij.lang.Language;
 import com.intellij.lang.LanguageParserDefinitions;
 import com.intellij.lang.html.HTMLLanguage;
@@ -21,6 +9,12 @@ import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiManager;
 import com.intellij.psi.impl.source.PsiFileImpl;
 import com.intellij.psi.templateLanguages.ConfigurableTemplateLanguageFileViewProvider;
+import consulo.freemarker.lang.FreeMarkerLanguage;
+import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import java.util.Set;
 
 /**
  * @author VISTALL
@@ -72,7 +66,7 @@ public class FreeMarkerFileViewProvider extends MultiplePsiFilesPerDocumentFileV
 	@Nonnull
 	public Set<Language> getLanguages()
 	{
-		return new THashSet<Language>(Arrays.asList(getBaseLanguage(), getTemplateDataLanguage()));
+		return Set.of(getBaseLanguage(), getTemplateDataLanguage());
 	}
 
 	@Override

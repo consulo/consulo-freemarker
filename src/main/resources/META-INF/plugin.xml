@@ -5,12 +5,16 @@
 	<version>SNAPSHOT</version>
 	<vendor>Max Ishchenko &amp; consulo.io</vendor>
 	<depends>com.intellij.xml</depends>
+	<category>Template Languages</category>
+	<tags>
+		<tag>template.language</tag>
+	</tags>
 
 	<extensions defaultExtensionNs="com.intellij">
 		<lang.parserDefinition language="FREE-MARKER" implementationClass="consulo.freemarker.lang.FreeMarkerParserDefinition" />
 		<lang.commenter language="FREE-MARKER" implementationClass="consulo.freemarker.lang.FreeMarkerCommenter" />
 		<lang.braceMatcher language="FREE-MARKER" implementationClass="consulo.freemarker.lang.FreeMarkerBraceMatcher" />
-		<lang.syntaxHighlighterFactory key="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerSyntaxHighlightFactory" />
+		<lang.syntaxHighlighterFactory language="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerSyntaxHighlightFactory" />
 		<syntaxHighlighter key="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerHighlighter"/>
 
 		<fileTypeFactory implementation="consulo.freemarker.FreeMarkerFileTypeFactory" />

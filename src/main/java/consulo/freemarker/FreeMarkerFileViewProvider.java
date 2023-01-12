@@ -1,16 +1,16 @@
 package consulo.freemarker;
 
-import com.intellij.lang.Language;
-import com.intellij.lang.LanguageParserDefinitions;
-import com.intellij.lang.html.HTMLLanguage;
-import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.psi.MultiplePsiFilesPerDocumentFileViewProvider;
-import com.intellij.psi.PsiFile;
-import com.intellij.psi.PsiManager;
-import com.intellij.psi.impl.source.PsiFileImpl;
-import com.intellij.psi.templateLanguages.ConfigurableTemplateLanguageFileViewProvider;
 import consulo.freemarker.lang.FreeMarkerLanguage;
 import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
+import consulo.language.Language;
+import consulo.language.impl.file.MultiplePsiFilesPerDocumentFileViewProvider;
+import consulo.language.impl.psi.PsiFileImpl;
+import consulo.language.parser.ParserDefinition;
+import consulo.language.psi.PsiFile;
+import consulo.language.psi.PsiManager;
+import consulo.language.template.ConfigurableTemplateLanguageFileViewProvider;
+import consulo.virtualFileSystem.VirtualFile;
+import consulo.xml.lang.html.HTMLLanguage;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -60,7 +60,7 @@ public class FreeMarkerFileViewProvider extends MultiplePsiFilesPerDocumentFileV
 
 	private PsiFile createFileInner(Language lang)
 	{
-		return LanguageParserDefinitions.INSTANCE.forLanguage(lang).createFile(this);
+		return ParserDefinition.forLanguage(lang).createFile(this);
 	}
 
 	@Nonnull

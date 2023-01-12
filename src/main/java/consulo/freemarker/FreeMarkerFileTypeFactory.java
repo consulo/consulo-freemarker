@@ -1,14 +1,16 @@
 package consulo.freemarker;
 
-import javax.annotation.Nonnull;
+import consulo.annotation.component.ExtensionImpl;
+import consulo.virtualFileSystem.fileType.FileTypeConsumer;
+import consulo.virtualFileSystem.fileType.FileTypeFactory;
 
-import com.intellij.openapi.fileTypes.FileTypeConsumer;
-import com.intellij.openapi.fileTypes.FileTypeFactory;
+import javax.annotation.Nonnull;
 
 /**
  * @author VISTALL
  * @since 02.10.13.
  */
+@ExtensionImpl
 public class FreeMarkerFileTypeFactory extends FileTypeFactory
 {
 	@Override

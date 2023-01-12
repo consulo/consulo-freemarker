@@ -1,8 +1,8 @@
 package consulo.freemarker.lang.lexer;
 
-import com.intellij.openapi.editor.DefaultLanguageHighlighterColors;
-import com.intellij.openapi.editor.HighlighterColors;
-import com.intellij.openapi.editor.colors.TextAttributesKey;
+import consulo.codeEditor.DefaultLanguageHighlighterColors;
+import consulo.codeEditor.HighlighterColors;
+import consulo.colorScheme.TextAttributesKey;
 
 /**
  * @author VISTALL
@@ -19,5 +19,4 @@ public interface FreeMarkerHighlighterKeys
 	TextAttributesKey STRING = TextAttributesKey.createTextAttributesKey("FREE-MARKER_STRING", DefaultLanguageHighlighterColors.STRING);
 
 	TextAttributesKey ID = TextAttributesKey.createTextAttributesKey("FREE-MARKER_ID", DefaultLanguageHighlighterColors.MARKUP_TAG);
-
 }

@@ -9,18 +9,6 @@
 	<tags>
 		<tag>template.language</tag>
 	</tags>
-
-	<extensions defaultExtensionNs="com.intellij">
-		<lang.parserDefinition language="FREE-MARKER" implementationClass="consulo.freemarker.lang.FreeMarkerParserDefinition" />
-		<lang.commenter language="FREE-MARKER" implementationClass="consulo.freemarker.lang.FreeMarkerCommenter" />
-		<lang.braceMatcher language="FREE-MARKER" implementationClass="consulo.freemarker.lang.FreeMarkerBraceMatcher" />
-		<lang.syntaxHighlighterFactory language="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerSyntaxHighlightFactory" />
-		<syntaxHighlighter key="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerHighlighter"/>
-
-		<fileTypeFactory implementation="consulo.freemarker.FreeMarkerFileTypeFactory" />
-		<fileType.fileViewProviderFactory filetype="FREE-MARKER" implementationClass="consulo.freemarker.FreeMarkerFileViewProviderFactory" />
-		<editorHighlighterProvider filetype="FREE-MARKER" implementationClass="consulo.freemarker.highlight.FreeMarkerEditorHighlighterProvider" />
-	</extensions>
 </consulo-plugin>
 
         

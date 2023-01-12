@@ -2,9 +2,9 @@ package consulo.freemarker.lang.psi;
 
 import consulo.freemarker.lang.FreeMarkerLanguage;
 import consulo.freemarker.lang.lexer.FreeMarkerTokenTypes;
-import com.intellij.psi.templateLanguages.TemplateDataElementType;
-import com.intellij.psi.tree.IElementType;
-import com.intellij.psi.tree.IFileElementType;
+import consulo.language.ast.IElementType;
+import consulo.language.ast.IFileElementType;
+import consulo.language.impl.psi.template.TemplateDataElementType;
 
 /**
  * User: Max

@@ -1,8 +1,8 @@
 package consulo.freemarker.lang.psi;
 
-import org.jetbrains.annotations.NonNls;
-import com.intellij.psi.tree.IElementType;
 import consulo.freemarker.lang.FreeMarkerLanguage;
+import consulo.language.ast.IElementType;
+import org.jetbrains.annotations.NonNls;
 
 /**
  * User: Max

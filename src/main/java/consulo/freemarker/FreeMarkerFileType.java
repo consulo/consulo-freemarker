@@ -1,8 +1,8 @@
 package consulo.freemarker;
 
-import com.intellij.openapi.fileTypes.LanguageFileType;
 import consulo.freemarker.icon.FreeMarkerIconGroup;
 import consulo.freemarker.lang.FreeMarkerLanguage;
+import consulo.language.file.LanguageFileType;
 import consulo.localize.LocalizeValue;
 import consulo.ui.image.Image;
 import org.jetbrains.annotations.NonNls;

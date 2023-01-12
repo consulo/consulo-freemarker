@@ -1,7 +1,7 @@
 package consulo.freemarker.highlight;
 
 import consulo.freemarker.lang.lexer.FreeMarkerMergingLexer;
-import com.intellij.lexer.LayeredLexer;
+import consulo.language.lexer.LayeredLexer;
 
 /**
  * Created by IntelliJ IDEA.

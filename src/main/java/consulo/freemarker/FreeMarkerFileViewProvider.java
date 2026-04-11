@@ -2,6 +2,7 @@ package consulo.freemarker;
 
 import consulo.freemarker.lang.FreeMarkerLanguage;
 import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
+import consulo.html.language.HTMLLanguage;
 import consulo.language.Language;
 import consulo.language.impl.file.MultiplePsiFilesPerDocumentFileViewProvider;
 import consulo.language.impl.psi.PsiFileImpl;
@@ -10,7 +11,6 @@ import consulo.language.psi.PsiFile;
 import consulo.language.psi.PsiManager;
 import consulo.language.template.ConfigurableTemplateLanguageFileViewProvider;
 import consulo.virtualFileSystem.VirtualFile;
-import consulo.xml.lang.html.HTMLLanguage;
 
 import jakarta.annotation.Nonnull;
 import jakarta.annotation.Nullable;

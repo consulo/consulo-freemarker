@@ -3,6 +3,7 @@ package consulo.freemarker.highlight;
 import consulo.colorScheme.EditorColorsScheme;
 import consulo.colorScheme.TextAttributesKey;
 import consulo.freemarker.lang.psi.FreeMarkerElementTypes;
+import consulo.html.language.HtmlFileType;
 import consulo.language.ast.IElementType;
 import consulo.language.editor.highlight.LayerDescriptor;
 import consulo.language.editor.highlight.LayeredLexerEditorHighlighter;
@@ -11,7 +12,6 @@ import consulo.language.editor.highlight.SyntaxHighlighterFactory;
 import consulo.language.lexer.Lexer;
 import consulo.project.Project;
 import consulo.virtualFileSystem.VirtualFile;
-import consulo.xml.ide.highlighter.HtmlFileType;
 
 import jakarta.annotation.Nonnull;
 import jakarta.annotation.Nullable;
@@ -22,7 +22,6 @@ import jakarta.annotation.Nullable;
  */
 public class FreeMarkerEditorHighlighter extends LayeredLexerEditorHighlighter
 {
-
 	public FreeMarkerEditorHighlighter(@Nullable Project project, @Nullable final VirtualFile virtualFile, @Nonnull final EditorColorsScheme colors)
 	{
 		super(new FreeMarkerHighlighter(), colors);

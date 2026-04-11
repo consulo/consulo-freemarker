@@ -6,7 +6,7 @@ module consulo.freemarker
 {
 	requires consulo.ide.api;
 
-	requires com.intellij.xml;
+	requires com.intellij.xml.html.api;
 
 	exports consulo.freemarker;
 	exports consulo.freemarker.highlight;
